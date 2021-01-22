@@ -1,8 +1,8 @@
-let baby = 1;
+let baby = 1; //age 2
 
-let toddler = ++baby; //age 2
+let toddler = ++baby; //age 3
 let kid = toddler + baby + 5 % 2;  // age 5
-let teen = 2 * (toddler * kid) - (toddler + kid); // age 13
+let teen = baby * (toddler * kid) - (toddler + kid); // age 13
 let adult = (kid - toddler) * (kid + teen) / ++toddler; // age 18
 
 
