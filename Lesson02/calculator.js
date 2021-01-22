@@ -1,10 +1,12 @@
-let toddler = 3; // age 3
+let baby = 1;
+
+let toddler = ++baby; //age 2
+let kid = toddler + baby + 5 % 2;  // age 5
+let teen = 2 * (toddler * kid) - (toddler + kid); // age 13
+let adult = (kid - toddler) * (kid + teen) / ++toddler; // age 18
 
 
-let kid = 9 % toddler;  // age 5
-let teen = toddler + (kid*2); // age 13
-let adult = teen + kid; // age 18
-
+console.log(`baby: ${baby}`)
 console.log(`Toddler: ${toddler}`)
 console.log(`Kid: ${kid}`)
 console.log(`Teenager: ${teen}`)
