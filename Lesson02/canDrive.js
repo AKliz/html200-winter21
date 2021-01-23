@@ -7,12 +7,8 @@ let drivingYears = age - legalAge;
 
 if (age > legalAge){
    console.log(`${firstName} ${lastName} can drive. They have been driving for ${drivingYears} years.`)
-}
-
-
-if(age < legalAge){
+} else {
   for (let i = 5; i > 0; i--){
       console.log(i);
     }
-
 }
