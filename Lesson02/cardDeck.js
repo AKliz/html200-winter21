@@ -8,39 +8,37 @@ let deckd = [];
 
 for (let i = 1; i < 11 ; i++){
   for (let j = 0; j < suits.length; j++){
-    let card =cardNumber +' of ' + suits[j];
     if (suits[j] === suits[0]){
-  decka.push(card);
-    }
-    if (suits[j] === suits[1]){
-  deckb.push(card);
-    }
-    if (suits[j] === suits[2]){
-  deckc.push(card);
-    }
-    if (suits[j] === suits[3]){
-  deckd.push(card);
-    }
+        deck0.push(cardNumber +' of ' + suits[j]);
+      }
+      if (suits[j] === suits[1]){
+        deck1.push(cardNumber +' of ' + suits[j]);
+      }
+      if (suits[j] === suits[2]){
+        deck2.push(cardNumber +' of ' + suits[j]);
+      }
+      if (suits[j] === suits[3]){
+        deck3.push(cardNumber +' of ' + suits[j]);
+      }
   }
   cardNumber++;
 }
 
-for (let i = 0; i < 4 ; i++){
-  for (let j = 0; j < suits.length; j++){
-    let card =faces[i] +' of ' + suits[j];
-      if (suits[j] === suits[0]){
-  decka.push(card);
+for (let k = 0; k < suits.length ; k++){
+  for (let l = 0; l < faces.length; l++){
+      if (suits[k] === suits[0]){
+        deck0.push(faces[l] +' of ' + suits[k]);
+      }
+      if (suits[k] === suits[1]){
+        deck1.push(faces[l] +' of ' + suits[k]);
+      }
+      if (suits[k] === suits[2]){
+        deck2.push(faces[l] +' of ' + suits[k]);
+      }
+      if (suits[k] === suits[3]){
+        deck3.push(faces[l] +' of ' + suits[k]);
+      }
     }
-    if (suits[j] === suits[1]){
-  deckb.push(card);
-    }
-    if (suits[j] === suits[2]){
-  deckc.push(card);
-    }
-    if (suits[j] === suits[3]){
-  deckd.push(card);
-    }
-  }
 }
 
 console.log(decka, deckb, deckc, deckd);
