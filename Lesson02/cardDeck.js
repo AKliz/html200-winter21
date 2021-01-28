@@ -41,7 +41,6 @@ for (let i = 0; i < 4 ; i++){
   deckd.push(card);
     }
   }
-  cardNumber++;
 }
 
 console.log(decka, deckb, deckc, deckd);
