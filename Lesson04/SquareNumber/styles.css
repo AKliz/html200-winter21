@@ -2,6 +2,10 @@ body{
   text-align: center;
 }
 
-h1.abacus{
+h1{
+  font-size:2rem;
+}
+
+button.abacus{
   font-size:4rem;
 }
