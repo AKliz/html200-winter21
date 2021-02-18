@@ -1,7 +1,3 @@
-//The user should see a prompt so they can type which action to perform.
-//Liz questions(whats the difference between prompt - asks for something vs alert - just says something???)
-
-
 //Define variables which include all the prompts
 
 let bankBalance = 0;
@@ -10,12 +6,6 @@ const withdraw = 'Enter an amount to widthdraw';
 const deposit = 'Enter an amount to deposit';
 const warning = 'Low balance warning - this will make your new balance less than $300. Do you want to proceed? Y or N';
 
-// The user will have a list of 4 actions to choose from. (Type these out in the alert box.)
-//(make sure to use the upper case helper to make all entrys go to uppercase)
-
-
-
-//start if else statement or switch statement?
 function bank(action) {
   const welcomeMessage = 'Please choose an action: Q to quit; W to widthdraw; D to deposit; B to see balance.';
   do{
@@ -81,39 +71,3 @@ function bank(action) {
   alert('EXITING - Your New Bank Balance is ' + bankBalance);
   console.log ('END OF ACTION FUNCTION')
 }
-
-function lowbalance (bankBalanceAmount){
-  if (bankBalanceAmount < 300){
-    prompt ("Warning Low Balance. Do you want to proceed?")
-  }
-  else {
-    console.log('END OF LOW BALANCE ALERT');;
-  }
-}
-
-
-
-
-
-
-// // Enter D to deposit.
-// else if 'D';
-//   console.log('deposit')
-//   alert(deposit);
-//   // The user will be prompted again to enter an amount to deposit.
-//   console.log('total deposit made of ' + deposit)
-//   //After depositing money, they should be able to type another option.
-//   alert(welcome);
-//
-// // Enter B to view balance.
-// else if 'B':
-// // The user will see their balance. Afterwards, they should be able to type another option.
-//   alert(balance);
-//   alert(welcome);
-//
-// // The program will loop asking for input until the user enters Q.
-//   // if  Enter Q to quit (immediately quits the program).
-//   // ??Make this the last one since you want it to quit the program? -
-//   else 'Q':
-//     console.log ('quit program');
-//     break;
