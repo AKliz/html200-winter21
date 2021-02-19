@@ -11,16 +11,14 @@ const newBankBalance = 'New Bank Balance is'
 
 function bank(open) {
   while (open === true){
-    let welcome = prompt(welcomeMessage);
+    let action = prompt(welcomeMessage).toUpperCase();
     console.log('starting banking app');
-    let action = welcome.toUpperCase();
     console.log(`RUN ACTION ${action}`);
     let money = 0;
     switch(action){
       case 'W':
         console.log('WITHDRAW');
-        money = prompt(withdraw);
-        money = Number(money);
+        money = Number(prompt(withdraw));
         testOverdrawl = bankBalance - money;
         if (money < 0 || testOverdrawl <  0){
             alert ('Warning! No Negative Withdraws or Balances Allowed');
@@ -39,7 +37,7 @@ function bank(open) {
               alert(`New Bank Balance is ${bankBalance}`);
               break;
             default:
-              alert('Widthdraw Cancelled - invalid entry.');
+              alert('Invaild Entry - Try again -Widthdraw Cancelled.');
               console.log(`Invalid entry ${proceed} - withdraw cancelled`);
           }
         }
@@ -51,9 +49,8 @@ function bank(open) {
         break;
       case 'D':
         console.log('DEPOSIT');
-        money = prompt(deposit);
-        money = Number(money);
-        if(money > 50000){
+        money = Number(prompt(deposit));
+        if(money> 50000){
             console.log(`Bank deposit of ${money} declined - over $50,000`);
             alert ("Warning! You've entered an amount over our deposit cap of $50,000.");
         }
