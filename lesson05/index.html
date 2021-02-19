@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+
+    <style media="screen" type="text/css">
+      h1{
+        text-align:center;
+        margin-bottom:7rem;
+      }
+      h2.money{
+        font-size: 4rem;
+        margin-bottom:0px;
+      }
+      h2{
+        margin-top:0px;
+        text-align:center;
+      }
+      .row{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+      }
+      .col4{
+        width: 30%;
+      }
+      .col12{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body onload="bank(true)">
+    <main>
+      <section class="row">
+        <div class="col12">
+          <h1> Welcome to Online Banking </h1>
+        </div>
+        <div class="col4">
+          <h2 class="money">💵</h2>
+          <h2>Deposit Money</h2>
+        </div>
+        <div class="col4">
+          <h2 class="money">💵</h2>
+          <h2>Withdraw Money</h2>
+        </div>
+        <div class="col4">
+          <h2 class="money">💵</h2>
+          <h2>Check Balance</h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <script src="./javascript.js">
+      </script>
+    </footer>
+  </body>
+</html>
